@@ -153,24 +153,18 @@ USB Type-C (VBUS)
 ## Firmware
 
 This board targets the **`ssd1306_mcp23017`** branch of [lamtranBKHN/diy_flipper_zero](https://github.com/lamtranBKHN/diy_flipper_zero).
-
+BTW, thanks to Nucleus Dark, the creator of the whole diy flipper zero project. 
+[GthiN89/FuckingCheapFlipperZero-DIY-Flipper-zero-The-real-on](https://github.com/GthiN89/FuckingCheapFlipperZero-DIY-Flipper-zero-The-real-on/tree/dev) 
+(https://www.youtube.com/@NucleusDark-xe1ne)
 ### Flashing
-
-**Step 1 — Write OTP (one-time, irreversible):**
-1. Hold `BOOT0` and plug the board via USB.
-2. Open STM32CubeProgrammer → USB connection → Connect.
-3. Use the OTP utility from the `mics/` folder to generate the OTP file.
-4. Flash to address `0x1FFF7000`.
-
-**Step 2 — Flash firmware:**
-1. Remove the microSD card.
-2. Open qFlipper → Install from file → select the `.dfu` file.
-3. If not detected, use Zadig to install USB Serial / WinUSB driver.
+On this Repository i Will NOT get into the flashing part because its a process i havent documented as well i as i wanted to. I will link an amazing youtube video on how to flash the board OTP.
+https://www.youtube.com/watch?v=i19l9XjMNNI
 
 ---
-
+## Display
+It must be a SSD1306 Display, doesn't matter if its 0.96" or 1.3", as long as the communication protocol is I2C, It *Will* work, if it isn't SSD1306 it *WILL NOT WORK!!!*
 ## What Works / Limitations
-
+---
 | Feature | Status |
 |---|---|
 | OLED display (SSD1306 I2C) | ✅ |
@@ -192,23 +186,23 @@ This board targets the **`ssd1306_mcp23017`** branch of [lamtranBKHN/diy_flipper
 
 | Component | Part | Package | LCSC |
 |---|---|---|---|
-| MCU devkit | WeAct STM32WB55CGU6 | Module | — |
+| MCU devkit | WeAct STM32WB55CGU6 | Module | — (AliExpress) |
 | I/O Expander | MCP23017T-E/ML | QFN-28 | C2678 |
-| Battery monitor | INA219BID | SOIC-8 | — |
-| Sub-GHz radio | CC1101 | Module | — |
-| LiPo charger | TP4056 | SOP-8 | — |
-| Battery protection IC | DW01 | SOT-23-6 | — |
-| Battery protection FET | FS8205A | SOT-23-6 | — |
-| OLED display | SSD1306 128×64 I2C | Module (THT) | — |
-| IR LED | AM2520F3C03-P22 | SMD | — |
-| IR receiver | TSOP38238 | THT | — |
-| Buzzer | MLT-8530 | SMD 8.5×8.5mm | — |
-| Vibration motor | LCM0827A3038F | SMD disc | — |
-| RGB LED | YLED5050RGB | SMD 5050 | — |
-| NPN transistor | MMBT2222A | SOT-23 | — |
-| Flyback diode | 1N4148W | SOD-123 | — |
-| FPC connector | FPC 0.5mm 7P bottom | SMD | — |
-| Power switch | DSHP01TSGER | SMD | — |
+| Battery monitor | INA219BID | SOIC-8 | C2859699 |
+| Sub-GHz radio | CC1101 | Module | — (AliExpress) |
+| LiPo charger | TP4056 | ESOP-8 | C725790 |
+| Battery protection IC | DW01A | SOT-23-6 | C351410 |
+| Battery protection FET | FS8205A | SOT-23-6 | C2830320 |
+| OLED display | SSD1306 128×64 I2C | Module (THT) | — (AliExpress) |
+| IR LED | AM2520F3C03-P22 | SMD 2520 | C6859641 |
+| IR receiver | TSOP38238 | THT | C141632 |
+| Buzzer | MLT-8530 | SMD 8.5×8.5mm | C94599 |
+| Vibration motor | LCM0827A3038F | SMD disc | C2759981 |
+| RGB LED | YLED5050RGB | SMD 5050 | — (search LCSC) |
+| NPN transistor | MMBT2222A | SOT-23 | C83939 |
+| Flyback diode | 1N4148W | SOD-123 | C81598 |
+| FPC connector | FPC 0.5mm 6P bottom | SMD | — (search LCSC) |
+| Power SIP switch | DSHP01TSGER | SMD | — (search LCSC) |
 
 ---
 
