@@ -54,7 +54,7 @@ The design splits into two PCBs connected via a **7-pin FFC cable (0.5mm pitch)*
 | 3 | I2C_SDA | Shared I2C data |
 | 4 | I2C_SCL | Shared I2C clock |
 | 5 | MCP_INT | MCP23017 interrupt → PB0 |
-| 6 | GPB0 | Vibration motor control |
+| 6 | NR | Reset Button control |
 | 7 | GND | Ground (stability) |
 
 ---
