@@ -32,17 +32,17 @@ The design splits into two PCBs connected via a **7-pin FFC cable (0.5mm pitch)*
 - INA219BID battery monitor (I2C)
 - CC1101 Sub-GHz radio (SPI)
 - microSD card slot (SPI)
-- IR transmitter (3× AM2520F3C03-P22 LEDs) + TSOP38238 receiver
-- MLT-8530 passive piezo buzzer
-- LCM0827A3038F vibration motor
+- IR transmitter (3× 3mm 950nm IR LEDs) + TSOP38238 receiver
+- MLT-8540 passive piezo buzzer
+- Vibration motor
 - USB Type-C (charging + programming)
 - Power switch (DSHP01TSGER)
 
 **PCB Superior (Top):**
 - MCP23017T-E/ML I/O expander (QFN-28, I2C)
 - 5-way tactile navigation switch
-- Back button (SMD tactile)
-- RGB status LED (YLED5050RGB)
+- Back button (THT Button)
+- RGB status LED (LTST-C19HE1WT)
 - SSD1306 OLED display connector (I2C)
 
 ### FPC Inter-Board Connector (7 pins)
@@ -193,15 +193,15 @@ It must be a SSD1306 Display, doesn't matter if its 0.96" or 1.3", as long as th
 | LiPo charger | TP4056 | ESOP-8 | C725790 |
 | Battery protection IC | DW01A | SOT-23-6 | C351410 |
 | Battery protection FET | FS8205A | SOT-23-6 | C2830320 |
-| OLED display | SSD1306 128×64 I2C | Module (THT) | — (AliExpress) |
-| IR LED | AM2520F3C03-P22 | SMD 2520 | C6859641 |
+| OLED display | SSD1306 128×64 I2C | Module (THT) | |
+| 3x IR LED | 3mm 950nm | SMD 2520 | C6859641 |
 | IR receiver | TSOP38238 | THT | C141632 |
 | Buzzer | MLT-8530 | SMD 8.5×8.5mm | C94599 |
-| Vibration motor | LCM0827A3038F | SMD disc | C2759981 |
-| RGB LED | YLED5050RGB | SMD 5050 | — (search LCSC) |
+| Vibration motor | - | SMD disc | C2759981 |
+| RGB LED | LTST-C19HE1WT | SMD 5050 | — (search LCSC) |
 | NPN transistor | MMBT2222A | SOT-23 | C83939 |
 | Flyback diode | 1N4148W | SOD-123 | C81598 |
-| FPC connector | FPC 0.5mm 6P bottom | SMD | — (search LCSC) |
+| FPC connector | FPC 0.5mm 7P bottom | SMD | — (search LCSC) |
 | Power SIP switch | DSHP01TSGER | SMD | — (search LCSC) |
 
 ---
