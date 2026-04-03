@@ -24,7 +24,7 @@
 
 ### Two-PCB Sandwich Design
 
-The design splits into two PCBs connected via a **6-pin FFC cable (0.5mm pitch)**:
+The design splits into two PCBs connected via a **7-pin FFC cable (0.5mm pitch)**:
 
 **PCB Inferior (Bottom):**
 - WeAct STM32WB55CGU6 devkit
