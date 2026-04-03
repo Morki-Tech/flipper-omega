@@ -153,7 +153,7 @@ USB Type-C (VBUS)
 ## Firmware
 
 This board targets the **`ssd1306_mcp23017`** branch of [lamtranBKHN/diy_flipper_zero](https://github.com/lamtranBKHN/diy_flipper_zero).
-BTW, thanks to Nucleus Dark, the creator of the whole diy flipper zero project. 
+BTW, thanks to Nucleus Dark, the creator of the whole diy flipper zero project. (The Firmware from the FcFz github from Nucleus Dark wont work for this PCB.)
 [GthiN89/FuckingCheapFlipperZero-DIY-Flipper-zero-The-real-on](https://github.com/GthiN89/FuckingCheapFlipperZero-DIY-Flipper-zero-The-real-on/tree/dev) 
 (https://www.youtube.com/@NucleusDark-xe1ne)
 ### Flashing
