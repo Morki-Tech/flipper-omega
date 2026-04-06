@@ -162,7 +162,7 @@ https://www.youtube.com/watch?v=i19l9XjMNNI
 
 ---
 ## Display
-It must be a SSD1306 Display, doesn't matter if its 0.96" or 1.3", as long as the communication protocol is I2C, It *Will* work. If it isn't SSD1306 it *WILL NOT WORK!!!*
+It must be a SSD1306 or SH1106 Display, doesn't matter if its 0.96" or 1.3", as long as the communication protocol is I2C, It *Will* work. If it isn't SSD1306 or SH1106 it *WILL NOT WORK!!!*
 ## What Works / Limitations
 ---
 | Feature | Status |
